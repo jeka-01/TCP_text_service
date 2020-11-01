@@ -9,7 +9,7 @@ class Server:
         self.interface = '127.0.0.1'
         self.port = port
 
-    def listen(self):
+    def connect_listen(self):
         connect_listener = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
         connect_listener.bind((self.host,self.port))
         connect_listener.listen(0)
